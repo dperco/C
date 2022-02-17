@@ -1,0 +1,343 @@
+
+ejercicio 1 
+
+
+#include <iostream>
+
+
+int main()
+{
+    const int Meses=12;
+    int edad;
+    int cantidad_meses;
+    
+    edad=25;
+    cantidad_meses= edad * Meses;
+    
+    printf("la cantidad de meses es :%d \n",cantidad_meses);
+    
+
+    return 0;
+}
+
+
+*************************************************************************************************************************************************************
+
+
+ejercicio 2  
+
+#include <iostream>
+
+int main()
+{
+    const float A=32;
+    float faren;
+    float C;
+    
+    
+    C=25;
+    faren= (C*1.8)+A;
+    
+    printf("la temperatura en Farenheid es :%f \n",faren);
+    
+
+    return 0;
+}
+
+
+************************************************************************************************************************************************************
+
+ejercicio 3 
+
+
+int main()
+{
+    
+    float IMC;
+    float PESO;
+    float altura;
+    
+    
+    PESO=80;
+    altura=1.90;
+    
+    IMC= PESO/(altura*altura);
+    
+    if (IMC >18 && IMC < 25)
+    
+    printf("el IMC es NORMAL = %f \n",IMC);
+    
+    else  printf("el IMC  NO es NORMAL = %f \n",IMC);
+    
+
+    return 0;
+
+}
+
+
+****************************************************************************************************************************************************************
+
+EJERCICIO 4
+
+#include <iostream>
+
+
+int main()
+{
+    const int Meses=12;
+    int edad;
+    int cantidad_meses;
+    
+    printf("ingrese la edad:\n");
+    scanf("%d",&edad);
+    cantidad_meses= edad * Meses;
+    
+    printf("la cantidad de meses es :%d \n",cantidad_meses);
+    
+
+    return 0;
+}
+ 
+
+
+
+*******************************************************************************************************************************************************************
+
+EJERCICIO 5
+
+#include <iostream>
+
+int main()
+{
+    const float A=32;
+    float faren;
+    float C;
+    
+    
+    printf("ingrese la temp en °C \n");
+    scanf("%f",&C);
+    faren= (C*1.8)+A;
+    
+    printf("la temperatura en Farenheid es :%.2f \n",faren);
+    
+
+    return 0;
+}
+
+
+
+
+
+*****************************************************************************************************************************************************************
+
+EJERCICIO 6
+
+
+#include <iostream>
+
+int main()
+{
+    
+    float IMC;
+    float PESO;
+    float altura;
+    
+    
+    printf("Ingrese altura :\n");
+    scanf("%f",&altura);
+    printf("Ingrese el peso :\n");
+    scanf("%f",&PESO);
+    
+    IMC= PESO/(altura*altura);
+    
+    if (IMC >18 && IMC < 25)
+    
+    printf("el IMC es NORMAL = %.2f \n",IMC);
+    
+    else  printf("el IMC  NO es NORMAL = %.2f \n",IMC);
+    
+
+    return 0;
+}
+
+
+**************************************************************************************************************************************************************+
+
+EJERCICIO 7
+
+
+#include <iostream>
+
+int main()
+{
+    
+    float IMC;
+    float PESO;
+    float altura;
+    
+    
+    printf("Ingrese altura :\n");
+    scanf("%f",&altura);
+    printf("Ingrese el peso :\n");
+    scanf("%f",&PESO);
+    
+    IMC= PESO/(altura*altura);
+    
+    if (IMC < 18)
+    
+    printf("el IMC es BAJO = %.2f \n",IMC);
+    
+    if (IMC >=18 && IMC <=25)
+    printf("el IMC  NO es NORMAL = %.2f \n",IMC);
+    if(IMC > 25)
+     printf("el IMC es ALTO = %.2f \n",IMC);
+    
+
+    return 0;
+}
+
+
+***************************************************************************************************************************************************
+
+                                                                  EJERCICIO  ESTRUCTURAS  DE CONTROL
+
+
+**************************************************************************************************************************************************
+
+EJERCICIO  1
+
+#include <iostream>
+
+
+int main()
+{
+    float Pot;
+    int   Ten;
+    float Corr;
+    
+    printf("ingrese la Tension entre 110 y 220 volt, sin decimales:\n");
+    scanf("%d",&Ten);
+    printf("ingrese la Corriente entre 0.5 y 3.5 amp:\n");
+    scanf("%f",&Corr);
+    
+    if (Ten >= 110 && Ten <= 220)
+    
+        if (Corr >= 0.5 && Corr <= 3.5)
+        
+         {
+          Pot = Ten * Corr;
+          if(Pot < 200)   
+                 printf(" Potencia baja : %.2f",Pot);
+          if (Pot >= 200 && Pot <= 450) 
+                 printf("Potencia Media : %.2f",Pot);
+          if(Pot > 450)   
+                 printf(" Potencia alta : %.2f",Pot);
+        }
+        else   
+          printf(" Corriente  incorrecta\n");
+    else
+     printf(" Tension incorrecta\n");   
+    
+    
+     return 0;
+}
+
+
+
+
+
+****************************************************************************************************************
+
+EJERCICIO 3
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int A;
+    int B;
+    int C;
+    int SUMA;
+    float PROM;
+    
+    printf("ingrese numero A \n");
+    scanf("%d",&A);
+    printf("ingrese numero B \n");
+    scanf("%d",&B);
+    printf("ingrese numero C \n");
+    scanf("%d",&C);
+    
+    // SUMA
+    SUMA= A+B+C ;
+    printf("La suma  es : %d \n",SUMA);
+    
+    //PROMEDIO
+    
+    PROM= SUMA / 3 ;
+    printf("El promedio es :%.2f \n",PROM);
+    
+    // MENOR VALOR
+    if(A < B && A < C) {
+                       if (B < C){
+                                  printf("El numero menor es:%d \n",A);
+                                  printf("El numero Mayor es:%d \n",C);
+                                 }
+                       else  {
+                              printf("El numero menor es:%d \n",A);
+                              printf("El numero Mayor es:%d \n",B);
+                             }
+        
+                        }
+            
+    
+    if(A< B && C< A) {
+                      printf("El numero menor es:%d \n",C);
+                      printf("El numero Mayor es:%d \n",B);
+                      }
+                       
+    
+    if(B< A && A< C) {
+                      printf("El numero menor es:%d \n",B);
+                      printf("El numero Mayor es:%d \n",C);
+                     }
+                    
+    
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

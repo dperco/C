@@ -1,0 +1,3 @@
+tipo : corte 
+Numero: 2
+Temperatura: 200.00

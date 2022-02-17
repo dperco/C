@@ -1,0 +1,3 @@
+total piezas fabricadas  : 58 
+total piezas ok: 44 
+toatal piezas erroneas : 14 
